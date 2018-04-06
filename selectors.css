@@ -1,11 +1,34 @@
 header {
     border: 1px solid goldenrod; 
 }
-
-#main-nav, li {
+/* Makes main navigation hyperlinks, horizontal with some spacing */
+#main-nav,
+.main-nav-item {
     display: inline;
     list-style: none;
-    word-spacing: 5px;    
+    word-spacing: 10px;    
 }
 
+.disabled {
+    color: gray;
+}
 
+a > .disabled {
+    color: purple;
+}
+.active {
+    color: yellow;
+}
+/* Step 8: Make this red */
+.parent > div > div {
+    color: red;
+}
+/* Step 9: Makes this text blue */
+.parent > div > div ~ div {
+    color: blue;
+}
+/* Step 10:  */
+.parent > div > div ~ div + h4 {
+    background-color: blue;
+
+}
